@@ -1,5 +1,6 @@
 import React from 'react';
 import jQuery from 'jquery';
+import Review from './Review';
 
 class Game extends React.Component {
   constructor(){
@@ -26,7 +27,9 @@ class Game extends React.Component {
   render() {
     return (
       <div>
-        {this.state.game.title}
+        <h1>{this.state.game.title}</h1>
+        
+        <Review gameId = {this.props.params.gameId} categoryId = {this.props.params.categoryId}/>
       </div>
     );
   }
