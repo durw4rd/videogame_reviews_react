@@ -26,7 +26,6 @@ class Game extends React.Component {
   render() {
     return (
       <div>
-        Game
         {this.state.game.title}
       </div>
     );
