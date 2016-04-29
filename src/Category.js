@@ -30,7 +30,7 @@ class Category extends React.Component {
         <ul>
 
         </ul>
-
+        {this.props.children}
       </div>
     );
   }
